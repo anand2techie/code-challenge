@@ -12,7 +12,7 @@ Project structure is laid out with separation of concerns in the first place. Us
 Used H2 as the database; Spring data JPA as repository support
 Lombok is used for concise-code writing
 
-#Approach
+# Approach
 There is a scheduler configured on a time everyday which syncs data from external currency conversion provider (suggested approach by the currency conversion provider) and caches into
 local H2 database and use that for conversion for the entire day, for faster and efficient conversion. Whenever the application
 gets restarted, data will be sync'ed again with external system. Sync frequency is configurable externally, thus providing
